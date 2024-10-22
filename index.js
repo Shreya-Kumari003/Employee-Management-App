@@ -16,11 +16,7 @@ app.get('/ping', (req, res) => {
 });
 
 app.use(bodyParser.json());
-app.use(cors({
-
-    origin: "https://employee-management-app-backend-4sp3.onrender.com"
-}
-));
+app.use(cors());
 
 
 app.use(express.json());
